@@ -1,0 +1,13 @@
+void matrixSummtion(int matrix[18][18])
+{
+	int sum=0;
+	for (int i = 0; i < 18; i++)
+	{
+		for (int j = 0; j < 18; j++)
+		{
+			sum += matrix[i][j];
+		}
+		cout << "sum of " << i + 1 << " row= " << sum << endl;
+	}
+	cout << endl;
+}

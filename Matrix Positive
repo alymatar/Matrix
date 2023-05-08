@@ -1,0 +1,26 @@
+void matrixPositive(int matrix[18][18])
+{
+	int count=0;
+	for (int i = 0; i < 18; i++)
+	{
+		for (int j = 0; j < 18; j++)
+		{
+			if (matrix[i][j] >= 1)
+			{
+				count++;
+			}
+		}
+		if (count == 18)
+		{
+			cout << i + 1 << " row is positive";
+			cout << endl;
+		}
+		else
+		{
+			cout << i + 1 << " row is not positive";
+			cout << endl;
+		}
+		count = 0;
+	}
+	cout << endl;
+}

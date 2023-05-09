@@ -1,0 +1,10 @@
+int main()
+{
+  int matrix[18][18], sum = 0, sum2 = 0, count = 0;
+  
+  creatMatrix(matrix);
+  printMatrix(matrix);
+  matrixSummtion(matrix);
+  matrixPositive(matrix);
+  matrixShaded(matrix);
+}

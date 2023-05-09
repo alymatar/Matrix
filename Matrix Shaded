@@ -1,0 +1,25 @@
+void matrixShaded(int matrix[18][18])
+{
+  int sum=0;
+  for (int i = 0; i < 4; i++)
+  {
+    for (int j = i + 1; j < 4; j++)
+    {
+      sum += matrix[i][j];
+    }
+  }
+  for (int i = 0; i < 4; i++)
+  {
+    for (int j = 0; j < 4; j++)
+    {
+      if (i == j)
+      {
+        sum += matrix[i][j];
+      }
+
+    }
+  }
+  cout << endl;
+  cout << "summtion of the shaded area= " << sum;
+}
+
